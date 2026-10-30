@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mandy's Home</title>
+<meta name="theme-color" content="#B9A3E3">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>
+  // Opened from the home-screen icon: go straight to Home.
+  var HOME = "https://claude.ai/artifact/TYSmZS2wjE68qiMGNuu3gc";
+  if (new URLSearchParams(location.search).has("go")) location.replace(HOME);
+</script>
+<style>
+  :root { --bg:#FEF7E5; --ink:#4A3B66; --lilac:#9C84D6; --soft:#EFE6FA; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#241D33; --ink:#F3ECFF; --soft:#352B4A; } }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px 16px;
+         background:var(--bg); color:var(--ink); font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; text-align:center; }
+  img { width:180px; height:180px; border-radius:40px; box-shadow:0 10px 30px rgba(120,90,180,.25); }
+  h1 { font-size:26px; margin:18px 0 6px; }
+  a.btn { display:inline-block; margin:14px 0 22px; padding:14px 28px; border-radius:999px;
+          background:var(--lilac); color:#fff; text-decoration:none; font-weight:700; font-size:18px; }
+  .how { background:var(--soft); border-radius:18px; padding:14px 18px; max-width:340px; margin:0 auto; text-align:left; font-size:15px; }
+  .how b { color:var(--lilac); }
+</style>
+</head>
+<body>
+<main>
+  <img src="icon-512.png" alt="A white kitty at the door of a little purple house">
+  <h1>Mandy's Home</h1>
+  <a class="btn" href="https://claude.ai/artifact/TYSmZS2wjE68qiMGNuu3gc">Open my Home 🏠</a>
+  <div class="how">
+    <b>Put this on your phone:</b><br>
+    1. Tap Chrome's <b>⋮</b> menu (top right).<br>
+    2. Tap <b>Add to home screen</b> (or <b>Install</b>).<br>
+    3. Tap <b>Add</b>. The kitty house icon appears on your phone.
+  </div>
+</main>
+</body>
+</html>
