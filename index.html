@@ -9,9 +9,9 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script>
-  // Opened from the home-screen icon: go straight to Home.
+  // Opened from the home-screen icon (start_url ?go=1, or the installed app): go straight to Home.
   var HOME = "https://claude.ai/artifact/TYSmZS2wjE68qiMGNuu3gc";
-  if (new URLSearchParams(location.search).has("go")) location.replace(HOME);
+  if (new URLSearchParams(location.search).has("go") || matchMedia("(display-mode: standalone)").matches) location.replace(HOME);
 </script>
 <style>
   :root { --bg:#FEF7E5; --ink:#4A3B66; --lilac:#9C84D6; --soft:#EFE6FA; }

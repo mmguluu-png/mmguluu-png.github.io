@@ -3,7 +3,7 @@
   "short_name": "Mandy's Home",
   "start_url": "./?go=1",
   "scope": "./",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#FEF7E5",
   "theme_color": "#B9A3E3",
   "icons": [
